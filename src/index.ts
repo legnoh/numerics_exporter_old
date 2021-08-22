@@ -1,9 +1,3 @@
-function hello(name: string): string {
-    return `Hello, ${name}!`;
-}
-  
-console.log(hello("World"));
-
 const fs = require('fs');
 
 const dir = "./public";
@@ -13,7 +7,7 @@ const json = {
   "postfix": "MyUnits",
   "color": "green",
   "data": {
-    "value": 1234
+    "value": 5678
   }
 };
 
@@ -23,3 +17,9 @@ if (!fs.existsSync(dir)){
 }
 
 fs.writeFileSync( dir + "/" + filename, JSON.stringify(json));
+
+// function hello(name: string): string {
+//     return `Hello, ${name}!`;
+// }
+  
+// console.log(hello("World"));
